@@ -1,0 +1,72 @@
+﻿<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+@model ChessLandPrj.Models.ViewModel._Editprofile 
+@using System.Collections
+
+<div ng-controller="EditProfileController">
+
+    @using (Html.BeginForm(null, null, FormMethod.Post, new { @class = "form-horizontal" }))
+    {    
+        @Html.ValidationSummary(true)
+        if (Session["user"] != null)
+        {
+            <p>ویرایش اطلاعات شخصی</p>
+            <div class="form-group">
+                @Html.LabelFor(m=>m.FirstName,new {@class="col-sm-2"})
+                <div class="col-sm-6">
+                    @Html.TextBoxFor(m=>m.FirstName,new {@class="form-control e2",placeholder="لطفا نام خود را وارد نمایید",ng_model="FirstName"})
+                </div>
+                <div class="col-sm-4">
+                    <span>@Html.ValidationMessageFor(m=>m.FirstName)</span>
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m=>m.LastName,new {@class="col-sm-2"})
+                <div class="col-sm-6">
+                    @Html.TextBoxFor(m=>m.LastName,new {@class="form-control e2",placeholder="لطفا نام خانوادگی خود را وارد نمایید",ng_model="LastName"})
+                </div>
+                <div class="col-sm-4">
+                    <span>@Html.ValidationMessageFor(m=>m.LastName)</span>
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m=>m.Email,new {@class="col-sm-2"})
+                <div class="col-sm-6">
+                    @Html.TextBoxFor(m=>m.Email,new {@class="form-control e2",placeholder="لطفا ایمیل خود را وارد نمایید",ng_model="Email"})
+                </div>
+                <div class="col-sm-4">
+                    <span>@Html.ValidationMessageFor(m=>m.Email)</span>
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m=>m.Gender,new {@class="col-sm-2"})
+                <div class="col-sm-6">
+                    <div class="radio-inline">
+                        @Html.EditorFor(m=>m.Gender,"GenderOption",new {ng_model="Gender"})
+                    </div>
+
+            
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-6">
+                    <input type="button" ng-click="editinfouser()" class="btn btn-default" value="ذخیره اطلاعات">
+                </div>
+               
+        
+            </div>
+        
+            <br/>
+            <span id="result"></span>
+        
+        }
+        else
+        {
+            <p>لطفا برای ویرایش اطلاعات خود وارد سیستم کاربری خود شوید. با تشکر</p>
+        }
+    }
+
+    <div>
+    </div>
+</div>
+

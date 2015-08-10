@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<about>
+  <us>
+    <Id>1</Id>
+    <Title>درباره ما</Title>
+    <Body>این یکمتن تستی می باشد که شما می توانید از قسمت پنل مدیریت  این را ویرایش کنید</Body>
+    <ImgName>1.jpg</ImgName>
+  </us>
+</about>

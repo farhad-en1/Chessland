@@ -1,0 +1,42 @@
+﻿@model ChessLandPrj.Models.TicketQstion
+
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+    @using (Html.BeginForm(null, null, FormMethod.Post, new { @class = "form-horizontal" }))
+    {
+    @Html.ValidationSummary(true)
+
+        <div class="form-group">
+            @Html.LabelFor(m=>m.QstionTitle,new {@class="col-sm-2"})
+            <div class="col-sm-6">
+                @Html.TextBoxFor(m=>m.QstionTitle,new {@class="form-control e3 ",placeholder="لطفا عنوان متن ارسالی خود را وارد نمایید",ng_model="Qstion.QstionTitle"})
+            </div>
+            <div class="col-sm-4">
+                <span>@Html.ValidationMessageFor(m=>m.QstionTitle)</span>
+            </div>
+        </div>
+        
+
+        <div class="form-group">
+            @Html.LabelFor(m=>m.QstionContent,new {@class="col-sm-2"})
+            <div class="col-sm-6">
+                @Html.TextAreaFor(m=>m.QstionContent,5,1,new {@class="form-control e3 ",placeholder="لطفا متن ارسالی خود را وارد نمایید",ng_model="Qstion.QstionContent"})
+            </div>
+            <div class="col-sm-4">
+                <span>@Html.ValidationMessageFor(m=>m.QstionContent)</span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-6">
+                <input type="button" ng-click="sendticket()" class="btn btn-default" value="ارسال تیکت ">
+            </div>
+        
+        </div>
+        <br/>
+        <span id="result"></span>
+
+<div>
+</div>
+}

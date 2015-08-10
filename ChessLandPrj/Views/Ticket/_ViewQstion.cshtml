@@ -1,0 +1,70 @@
+﻿@using System.Globalization
+@model IEnumerable<ChessLandPrj.Models.TicketQstion>
+
+<p>
+   
+</p>
+
+@if (!Model.Any())
+{
+    <p class="alert"> شما هیچ پرسش پاسخ داده نشده ندارید</p>
+}
+else
+{
+    <ul class="list-group">
+    
+    @foreach (var Aq in Model)
+    {
+        <li class="list-group-item">
+            <span class="text-info">
+                  @Aq.QstionTitle 
+            </span>
+            <br/>
+            شما : 
+            @Aq.QstionContent
+            <br/>
+            ارسال شده در تاریخ :
+            @{
+                var per = new PersianCalendar();
+                string perdate = "";
+                if (Aq.RegTime != null)
+                {
+                    perdate = per.GetYear((DateTime)Aq.RegTime) + "/" + per.GetMonth((DateTime)Aq.RegTime) + "/" + per.GetDayOfMonth((DateTime)Aq.RegTime) + " " + per.GetHour((DateTime)Aq.RegTime) + ":" + per.GetMinute((DateTime)Aq.RegTime) + ":" + per.GetSecond((DateTime)Aq.RegTime);    
+                }
+                
+            }
+            <span>@perdate</span>
+        </li>
+        <li class="list-group-item">
+            @{
+        if (Aq.TicketAnswer !=null && Aq.TicketAnswer.AnsContent != null)
+                {
+                    @Html.Raw(Aq.TicketAnswer.AnsContent)
+                    <br/>
+                    <span>پاسخ داده شده در تاریخ :</span>
+                    string s="";
+                    <span>
+                        @if (Aq.TicketAnswer.AnsReTime != null)
+                        {
+                            s = @per.GetYear((DateTime)Aq.TicketAnswer.AnsReTime) + "/" + per.GetMonth((DateTime)Aq.TicketAnswer.AnsReTime) + "/" + per.GetDayOfMonth((DateTime)Aq.TicketAnswer.AnsReTime) + " " + per.GetHour((DateTime)Aq.TicketAnswer.AnsReTime) + ":" + per.GetMinute((DateTime)Aq.TicketAnswer.AnsReTime) + ":" + per.GetSecond((DateTime)Aq.TicketAnswer.AnsReTime);     
+                        } 
+                        @s
+                    </span>
+                
+                
+            }
+                
+                else
+                {
+                    <span>پاسخ داده نشده </span>
+                
+                }
+            }
+        </li>
+        
+    }
+
+</ul>
+
+        
+}

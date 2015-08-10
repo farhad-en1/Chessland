@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE Groups [
+  <!ELEMENT Groups (Group*)>
+  <!ELEMENT Group (Id_Group,Title,Image,ParentId,Count)>
+  <!ELEMENT Id_Group (#PCDATA)>
+  <!ELEMENT Title (#PCDATA)>
+  <!ELEMENT Image (#PCDATA)>
+  <!ELEMENT ParentId (#PCDATA)>
+  <!ELEMENT Count (#PCDATA)>
+]>
+<Groups>
+  <Group>
+    <Id_Group>1400</Id_Group>
+    <Title>ادبیات</Title>
+    <Image>12.jpg</Image>
+    <ParentId>0</ParentId>
+  </Group>
+  <Group>
+    <Id_Group>1401</Id_Group>
+    <Title>جغرافیا</Title>
+    <Image>2013418192312339.jpg</Image>
+    <ParentId>0</ParentId>
+  </Group>
+  <Group>
+    <Id_Group>1402</Id_Group>
+    <Title>فنی و مهندسی</Title>
+    <Image>2013418205051581.jpg</Image>
+    <ParentId>0</ParentId>
+  </Group>
+  <Group>
+    <Id_Group>1403</Id_Group>
+    <Title>کامپیوتر</Title>
+    <Image>2013421124919283.JPG</Image>
+    <ParentId>1402</ParentId>
+  </Group>
+  <Group>
+    <Id_Group>1404</Id_Group>
+    <Title>نرم افزار</Title>
+    <Image>20134211723204.JPG</Image>
+    <ParentId>1403</ParentId>
+  </Group>
+  <Group>
+    <Id_Group>1405</Id_Group>
+    <Title>سخت افزار</Title>
+    <Image>201342117344615.JPG</Image>
+    <ParentId>1403</ParentId>
+  </Group>
+  <Group>
+    <Id_Group>1406</Id_Group>
+    <Title>برق</Title>
+    <Image>20135922238766.jpg</Image>
+    <ParentId>0</ParentId>
+  </Group>
+  <Group>
+    <Id_Group>1407</Id_Group>
+    <Title>مخابرات</Title>
+    <Image>2013513151313434.jpg</Image>
+    <ParentId>1402</ParentId>
+  </Group>
+  <Group>
+    <Id_Group>1408</Id_Group>
+    <Title>ایران گردی</Title>
+    <Image>201351517197966.jpg</Image>
+    <ParentId>1401</ParentId>
+  </Group>
+  <Group>
+    <Id_Group>1409</Id_Group>
+    <Title>سیستمی</Title>
+    <Image>2013515225626126.jpg</Image>
+    <ParentId>1404</ParentId>
+  </Group>
+  <Group>
+    <Id_Group>1410</Id_Group>
+    <Title>مخابرات قدرت</Title>
+    <Image>201351612221404.jpg</Image>
+    <ParentId>1407</ParentId>
+  </Group>
+  <Group>
+    <Id_Group>1411</Id_Group>
+    <Title>شبکه</Title>
+    <Image>2013520153312352.jpg</Image>
+    <ParentId>1403</ParentId>
+  </Group>
+  <Group>
+    <Id_Group>1412</Id_Group>
+    <Title>اینترنت</Title>
+    <Image>2013520153312352.jpg</Image>
+    <ParentId>1403</ParentId>
+  </Group>
+  <Group>
+    <Id_Group>1413</Id_Group>
+    <Title>هک</Title>
+    <Image>2013520153418347.jpg</Image>
+    <ParentId>1403</ParentId>
+  </Group>
+  <Group>
+    <Id_Group>1414</Id_Group>
+    <Title>پزشکی</Title>
+    <Image>2013525234352731.jpg</Image>
+    <ParentId>0</ParentId>
+  </Group>
+  <Group>
+    <Id_Group>1416</Id_Group>
+    <Title>سیاسی</Title>
+    <Image>2013525234726742.jpg</Image>
+    <ParentId>0</ParentId>
+  </Group>
+  <Group>
+    <Id_Group>1418</Id_Group>
+    <Title>کودکانه</Title>
+    <Image>2013525235657703.jpg</Image>
+    <ParentId>0</ParentId>
+  </Group>
+  <Group>
+    <Id_Group>1419</Id_Group>
+    <Title>آشپزی</Title>
+    <Image>201352523584716.JPG</Image>
+    <ParentId>0</ParentId>
+  </Group>
+  <Group>
+    <Id_Group>1420</Id_Group>
+    <Title>بیوگرافی</Title>
+    <Image>20135260035695.jpg</Image>
+    <ParentId>0</ParentId>
+  </Group>
+  <Group>
+    <Id_Group>1421</Id_Group>
+    <Title>داستان و رمان</Title>
+    <Image>20135260130954.jpg</Image>
+    <ParentId>0</ParentId>
+  </Group>
+  <Group>
+    <Id_Group>1422</Id_Group>
+    <Title>اشعار</Title>
+    <Image>2013526022116.jpg</Image>
+    <ParentId>0</ParentId>
+  </Group>
+  <Group>
+    <Id_Group>1423</Id_Group>
+    <Title>گروه 1</Title>
+    <Image>2013526022116.jpg</Image>
+    <ParentId>0</ParentId>
+  </Group>
+  <Group>
+    <Id_Group>1424</Id_Group>
+    <Title>گروه 2</Title>
+    <Image>2013526022116.jpg</Image>
+    <ParentId>0</ParentId>
+  </Group>
+  <Group>
+    <Id_Group>1425</Id_Group>
+    <Title>گروه 3</Title>
+    <Image>2013526022116.jpg</Image>
+    <ParentId>0</ParentId>
+  </Group>
+  <Group>
+    <Id_Group>1426</Id_Group>
+    <Title>گروه 4</Title>
+    <Image>2013526022116.jpg</Image>
+    <ParentId>0</ParentId>
+  </Group>
+  <Group>
+    <Id_Group>1427</Id_Group>
+    <Title>گروه 5</Title>
+    <Image>2013526022116.jpg</Image>
+    <ParentId>0</ParentId>
+  </Group>
+  <Group>
+    <Id_Group>1428</Id_Group>
+    <Title>گروه 6</Title>
+    <Image>2013526022116.jpg</Image>
+    <ParentId>0</ParentId>
+  </Group>
+  <Group>
+    <Id_Group>1429</Id_Group>
+    <Title>گروه 7</Title>
+    <Image>2013526022116.jpg</Image>
+    <ParentId>0</ParentId>
+  </Group>
+  <Group>
+    <Id_Group>1430</Id_Group>
+    <Title>گروه 8</Title>
+    <Image>2013526022116.jpg</Image>
+    <ParentId>0</ParentId>
+  </Group>
+  <Group>
+    <Id_Group>1431</Id_Group>
+    <Title>گروه 9</Title>
+    <Image>2013526022116.jpg</Image>
+    <ParentId>0</ParentId>
+  </Group>
+  <Group>
+    <Id_Group>1432</Id_Group>
+    <Title>گروه 10</Title>
+    <Image>2013526022116.jpg</Image>
+    <ParentId>0</ParentId>
+  </Group>
+  <Group>
+    <Id_Group>1433</Id_Group>
+    <Title>گروه 11</Title>
+    <Image>2013526022116.jpg</Image>
+    <ParentId>0</ParentId>
+  </Group>
+  <Group>
+    <Id_Group>1434</Id_Group>
+    <Title>گروه 12</Title>
+    <Image>2013526022116.jpg</Image>
+    <ParentId>0</ParentId>
+  </Group>
+  <Group>
+    <Id_Group>1435</Id_Group>
+    <Title>گروه 13</Title>
+    <Image>2013526022116.jpg</Image>
+    <ParentId>0</ParentId>
+  </Group>
+</Groups>

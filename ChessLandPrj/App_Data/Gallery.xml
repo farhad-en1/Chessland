@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<gallery>
+  <gal>
+    <id>1</id>
+    <name>ax1.jpg</name>
+    <title>ax 1</title>
+  </gal>
+  <gal>
+    <id>2</id>
+    <name>ax2.jpg</name>
+    <title>ax 2</title>
+  </gal>
+  <gal>
+    <id>3</id>
+    <name>ax3.jpg</name>
+    <title>reggsdfgs</title>
+  </gal>
+  <gal>
+    <id>4</id>
+    <name>ax4.jpg</name>
+    <title>reggsdfgs</title>
+  </gal>
+  
+  
+</gallery>

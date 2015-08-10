@@ -1,0 +1,167 @@
+﻿body {
+    direction: rtl;
+}
+.clearfix:after, .MP-Main:after {
+    border: 1px solid black;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    content: ".";
+}
+.MP-Main {
+    width: 1220px;
+    margin: 0 auto;
+}
+.clearfix, .MP-Main {
+    display: block;
+}
+#MP-Header {
+    height: 110px;
+    background-color: burlywood;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 1px #6D6D6C;
+    overflow: hidden;
+    top: 0;
+}
+hr.space {
+   background: none repeat scroll 0 0 #FFFFFF;
+    color: #FFFFFF;
+    visibility: visible; 
+}
+hr {
+   background: none repeat scroll 0 0 #DDDDDD;
+    border: 0 none;
+    clear: both;
+    color: #DDDDDD;
+    float: none;
+    height: 1px;
+    margin: 0 0 17px;
+    width: 100%;
+}
+.Lrborder {
+     border-right: 1px solid #dddddd;
+    margin-right: 25px;
+    padding-right: 24px;
+}
+#MP-RightMenu {
+    width: 150px;
+    height: 500px;
+    background-color: darkseagreen;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 1px #6D6D6C;
+    float: right;
+}
+#MP-RightMenu:after {
+    clear: both;
+}
+.MP-BodyContent {
+    width: 1000px;
+    float: left;
+}
+.MP-BodyContent:after {
+    clear: both;
+}
+/* UPDATE XML GROUP
+    */
+#Up-Main {
+    width: 1000px;
+    margin: 0 auto;
+}
+#UP-DataBase {
+    width: 400px;
+    float: right;
+}
+#UP-XML {
+    width: 400px;
+    float: right;
+}
+.menu-LstGroup td {
+    text-align: center;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 0;
+    
+        
+}
+.ColNo {
+    width: 79px;
+    text-align: center;
+    float: right;
+    padding-top: 20px;
+}
+.ColImg {
+    width: 119px;
+    text-align: center;
+    float: right;
+}
+.ColTitle {
+    width: 119px;
+    text-align: center;
+    float: right;
+    padding-top: 20px;
+}
+.ColParentNo {
+    width: 79px;
+    text-align: center;
+    float: right;
+    padding-top: 20px;
+    
+}
+.FrameImage span {
+   font-family: 'b koodak',helvetica,Arial;
+    cursor: pointer;
+}
+body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section 
+{
+    border: 0 none;
+    font: inherit;
+    font-family: tahoma;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+input,section,select {
+    font-family: tahoma;
+}
+.RightNode ul {
+    list-style: none outside none;
+}
+.RightNode ul li {
+    padding-right: 10px;
+    margin: 1px;
+}
+h5 
+{
+    font-family: 'b koodak',helvetica,Arial;
+    font-size: 18px;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+a {
+    color: #0388A6;
+    text-decoration: none;
+    transition-duration: 0.3s;
+    transition-property: color;
+}
+.txtbox {
+    font-family: tahoma;
+    width: 120px;
+}
+.FrameImage {
+    width: 120px;
+    height: 170px;
+    border: 1px solid #BDBAAF;
+    box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.25);
+    padding: 3px;
+}
+/* MpGroup*/
+.rightsection {
+    width: 300px;
+    float: right;
+}
+.leftsection {
+    width: 700px;
+    float: right;
+}

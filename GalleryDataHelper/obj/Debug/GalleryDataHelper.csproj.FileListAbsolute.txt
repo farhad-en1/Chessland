@@ -1,0 +1,4 @@
+C:\Users\Taghizadeh\documents\visual studio 2012\Projects\ChessLandPrj\GalleryDataHelper\bin\Debug\GalleryDataHelper.dll
+C:\Users\Taghizadeh\documents\visual studio 2012\Projects\ChessLandPrj\GalleryDataHelper\bin\Debug\GalleryDataHelper.pdb
+C:\Users\Taghizadeh\documents\visual studio 2012\Projects\ChessLandPrj\GalleryDataHelper\obj\Debug\GalleryDataHelper.dll
+C:\Users\Taghizadeh\documents\visual studio 2012\Projects\ChessLandPrj\GalleryDataHelper\obj\Debug\GalleryDataHelper.pdb

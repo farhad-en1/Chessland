@@ -1,0 +1,92 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<h2>صفحه اصلی</h2>
+<div class="row">
+            <div class="col-sm-2 " style="background-color:lavenderblush;">
+            <div id="MP-RightMenu" class="RightNode">
+                <h5>اکانت</h5>
+                <ul id="ManageGroups" class="nav">
+                    <li>
+                        <a href="signup">ثبت نام</a>
+                    </li>
+                    <li>
+                        <a href="login">ورود</a>
+                    </li>
+                    <li>
+                        <a href="editprofile">ویرایش پروفایل</a>
+                    </li>
+                </ul>
+                <h5>پشتیبانی</h5>
+                <ul class="nav">
+                    <li>
+                        <a href="sendticket"> ارسال تیکت</a>
+                    </li>
+                    <li>
+                        <a href="viewticet"> مشاهده تیکت</a>
+                    </li>
+                    <li>
+                        <a href="onlinechat">پشتیبان آنلاین</a>
+                    </li>
+                </ul>
+                <h5> گالری</h5>
+                <ul class="nav">
+                    <li>
+                        <a href="gallery">
+                            مشاهده
+                        </a>
+
+                    </li>
+
+                </ul>
+                <h5>دانلود</h5>
+                <ul class="nav">
+                    <li>
+                        <a href="download" >
+                            دانلود بازی
+                        </a>
+
+                    </li>
+                </ul>
+                <h5>درباره ما</h5>
+
+                <ul class="nav">
+                    <li>
+                        <a href="preamble">
+                            توضیحات
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="aboutus">
+                            درباره ما
+                        </a>
+
+                    </li>
+
+                </ul>
+
+
+
+            </div>
+            </div> 
+
+    <div class="col-sm-10 jumbotron " style="background-color:lavender;" >          
+        <div ng-view>
+                
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+    <p class="lead">
+        foother of pages
+
+    </p>
+
+</div>
+

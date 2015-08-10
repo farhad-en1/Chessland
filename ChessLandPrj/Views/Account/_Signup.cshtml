@@ -1,0 +1,164 @@
+﻿<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+
+@model ChessLandPrj.Models.Account
+
+@{
+    ViewBag.Title = "ثبت نام";
+    Layout = null;
+}
+
+<head>
+    <title>ثبت نام</title>
+</head>
+
+<div ng-controller="SignUpController">
+    
+    @using (Html.BeginForm(null,null,FormMethod.Get,new { @class = "form-horizontal", @name="signupform" }))
+    {
+        @Html.ValidationSummary(true)
+        <div class="form-group">
+            @Html.LabelFor(model=>model.UserName,new {@class="col-sm-2 a"})
+            <div class="col-sm-6">
+                @Html.TextBoxFor(model=>model.UserName,new {@class="form-control e1 ",placeholder="لطفا نام کاربری خود را وارد نمایید",ng_model="account.UserName"})
+            </div>
+            <div class="col-sm-4">
+                <span>@Html.ValidationMessageFor(model=>model.UserName)</span>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            @Html.LabelFor(model=>model.Password,new {@class="col-sm-2"})
+            <div class="col-sm-6">
+                @Html.PasswordFor(model=>model.Password,new {@class="form-control e1",placeholder="لطفا گذرواژه خود را وارد نمایید",ng_model="account.Password"})
+            </div>
+            <div class="col-sm-4">
+                <span>@Html.ValidationMessageFor(model=>model.Password)</span>
+            </div>
+        </div>
+    
+        <div class="form-group">
+            @Html.LabelFor(model=>model.ConfirmPassword,new {@class="col-sm-2"})
+            <div class="col-sm-6">
+                @Html.PasswordFor(model=>model.ConfirmPassword,new {@class="form-control e1",placeholder="لطفا گذرواژه خود را تکرار نمایید",ng_model="account.ConfirmPassword"})
+            
+            </div>
+            <div class="col-sm-4">
+                <span>@Html.ValidationMessageFor(m=>m.ConfirmPassword)</span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model=>model.FirstName,new {@class="col-sm-2"})
+            <div class="col-sm-6">
+                @Html.TextBoxFor(model=>model.FirstName,new {@class="form-control e1",placeholder="لطفا نام خود را وارد نمایید",ng_model="account.FirstName"})
+            </div>
+            <div class="col-sm-4">
+                <span>@Html.ValidationMessageFor(model=>model.FirstName)</span>
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model=>model.LastName,new {@class="col-sm-2"})
+            <div class="col-sm-6">
+                @Html.TextBoxFor(model=>model.LastName,new {@class="form-control e1",placeholder="لطفا نام خانوادگی خود را وارد نمایید",ng_model="account.LastName"})
+            </div>
+            <div class="col-sm-4">
+                <span>@Html.ValidationMessageFor(model=>model.LastName)</span>
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model=>model.MobilePhone,new {@class="col-sm-2"})
+            <div class="col-sm-6">
+                @Html.TextBoxFor(model=>model.MobilePhone,new {@class="form-control e1",placeholder="لطفا شماره موبایل خود را وارد نمایید",ng_model="account.MobilePhone"})
+            </div>
+            <div class="col-sm-4">
+                <span>@Html.ValidationMessageFor(model=>model.MobilePhone)</span>
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model=>model.Email,new {@class="col-sm-2"})
+            <div class="col-sm-6">
+                @Html.TextBoxFor(model=>model.Email,new {@class="form-control e1",placeholder="لطفا ایمیل خود را وارد نمایید",ng_model="account.Email"})
+            </div>
+            <div class="col-sm-4">
+                <span>@Html.ValidationMessageFor(m=>m.Email)</span>
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model=>model.Gender,new {@class="col-sm-2"})
+            <div class="col-sm-6">
+                <div class="radio-inline">
+                    @Html.EditorFor(model=>model.Gender,"GenderOption",new {ng_model="account.Gender"})
+                </div>
+            </div>
+            <div class="col-sm-4">
+            </div>
+        </div>
+        <div class="form-group">
+            <label  class="col-sm-6">کشور </label>
+            <select id ="selCountry">
+                <option>انتخاب کنید...</option>
+                <option ng-repeat="co in countries"  ng-click="getprivoices(co.CountryId)">
+                    {{co.CountryName}}
+                </option>
+            </select>
+
+
+            <div class="col-sm-4">
+                <span> </span>
+            </div>
+        </div> 
+        
+        <div class="form-group">
+            <label  class="col-sm-2">استان </label>
+            <div class="col-sm-6">
+                <select id="prov" class="e1">
+                    <option>انتخاب کنید...</option>
+                    <option ng-repeat="prov in province" ng-click="getcities(prov.ProvinceId)">
+                        {{prov.ProvinceName}}
+                    </option>
+                </select>
+            </div>
+
+            <div class="col-sm-4">
+                <span> </span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label  class="col-sm-2">شهر </label>
+            @*<div class=" dropdown col-sm-6">
+                @Html.DropDownListFor(model=>model.City,Enumerable.Empty<SelectListItem>(),new {ng_model="idcity"}) 
+            </div>*@
+             <select id ="selcities" ng-model="account.City.CityId" class="e1">
+                <option>انتخاب کنید...</option>
+                <option ng-repeat="city in cites" value="{{city.CityId}}">
+                    {{city.CityName}}
+                </option>
+            </select>
+            <div class="col-sm-4">
+                <span> </span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-6">
+                <div id="signupbtn">
+                    <input id="signup" type="button" ng-click="registernewuser()" class="btn btn-default" value="ثبت نام">    
+                </div>
+                <div id="loading" class="hide">
+                    <button class="btn btn-lg btn-warning"><span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span> در حال بررسی ...</button>     
+                </div>        
+            </div>
+
+            
+           
+        
+        </div>
+        <br/>
+        <span id="result"></span>
+    }
+</div>
+
+
+
+

@@ -1,0 +1,9 @@
+C:\Users\Taghizadeh\Documents\Visual Studio 2012\Projects\ChessLandPrj\ChService\bin\Debug\ChService.dll
+C:\Users\Taghizadeh\Documents\Visual Studio 2012\Projects\ChessLandPrj\ChService\bin\Debug\ChService.pdb
+C:\Users\Taghizadeh\Documents\Visual Studio 2012\Projects\ChessLandPrj\ChService\bin\Debug\ChModel.dll
+C:\Users\Taghizadeh\Documents\Visual Studio 2012\Projects\ChessLandPrj\ChService\bin\Debug\ChRepository.dll
+C:\Users\Taghizadeh\Documents\Visual Studio 2012\Projects\ChessLandPrj\ChService\bin\Debug\ChModel.pdb
+C:\Users\Taghizadeh\Documents\Visual Studio 2012\Projects\ChessLandPrj\ChService\bin\Debug\ChRepository.pdb
+C:\Users\Taghizadeh\Documents\Visual Studio 2012\Projects\ChessLandPrj\ChService\obj\Debug\ChService.csprojResolveAssemblyReference.cache
+C:\Users\Taghizadeh\Documents\Visual Studio 2012\Projects\ChessLandPrj\ChService\obj\Debug\ChService.dll
+C:\Users\Taghizadeh\Documents\Visual Studio 2012\Projects\ChessLandPrj\ChService\obj\Debug\ChService.pdb

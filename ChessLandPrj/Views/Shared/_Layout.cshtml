@@ -1,0 +1,59 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <base href="/"/>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width" /> 
+        <link rel="stylesheet" href="@Url.Content("~/Content/bootstrap.rtl.css")">
+        <script type="text/javascript" src="@Url.Content("~/Scripts/jquery-2.1.4.min.js")"></script>
+        <script type="text/javascript" src="@Url.Content("~/Scripts/jquery.validate.min.js")"></script>
+        <script type="text/javascript" src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")"></script>
+        <script src="@Url.Content("~/Scripts/bootstrap.min.js")"></script>
+        
+        <script type="text/javascript" src="@Url.Content("~/Scripts/angular.js")"></script>
+        <script type="text/javascript" src="@Url.Content("~/Scripts/angular-route.min.js")"></script>
+        <script type="text/javascript" src="@Url.Content("~/myscript/module.js")"></script>
+        <script type="text/javascript" src="@Url.Content("~/myscript/Controller/SignUpController.js")"></script>
+        <script type="text/javascript" src="@Url.Content("~/myscript/Controller/LoginController.js")"></script>
+        <script type="text/javascript" src="@Url.Content("~/myscript/Controller/EditProfileController.js")"></script>
+        <script type="text/javascript" src="@Url.Content("~/myscript/Service/chlanservice.js")"></script>
+        <script type="text/javascript" src="@Url.Content("~/myscript/myclientode.js")"></script>
+        <script type="text/javascript" src="@Url.Content("~/myscript/Controller/TicketController.js")"></script>
+        <script type="text/javascript" src="@Url.Content("~/myscript/Controller/DownloadController.js")"></script>
+        <script type="text/javascript" src="@Url.Content("~/myscript/Controller/AboutusController.js")"></script>
+        <script type="text/javascript" src="@Url.Content("~/myscript/Controller/OnlineChatController.js")"></script>
+        
+        
+       
+    </head>
+<body ng-app="ApplicationModule">
+    <div>
+    <div>
+        <div class="navbar navbar-default navbar-fixed-top" id="MP-Header">
+            <p>
+                @{
+                    <span id="welcomemessage"> @((Session["user"] != null) ? @Session["welcome"]+" " + " خوش آمدید" :"میهمان عزیز خوش آمدید" )   </span>
+                    if (Session["user"] != null)
+                    {
+                        <div ng-controller="LoginController">
+                            <span  ng-click="logout()"> خروج </span>
+                        </div>
+                        
+                    }
+                }
+            </p>
+        </div>
+        <hr class="space"/>
+       
+        <div class="container">
+            @RenderBody()
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+    </div>
+</body>
+</html>

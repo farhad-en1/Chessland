@@ -1,0 +1,47 @@
+﻿@model ChessLandPrj.Models.ViewModel._Login
+
+@{
+    ViewBag.Title = "ورود کاربران";
+}
+<title>ورود کاربران </title>
+<div ng-controller="LoginController">
+    @using (Html.BeginForm(null, null, FormMethod.Post, new {@class = "form-horizontal"}))
+    {
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-md-offset-4">
+                    <div class="account-wall">
+                        <img class="profile-img" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120"
+                             alt="">
+                        <form class="form-signin">
+                            @Html.ValidationSummary(true)
+                            <div class="form-group">
+                                @Html.LabelFor(model=>model.UserName,new {@class="col-sm-2 a"})
+                                <div class="col-sm-6">
+                                    @Html.TextBoxFor(model=>model.UserName,new {@class="form-control e1 ",placeholder="لطفا نام کاربری خود را وارد نمایید",ng_model="login.UserName"})
+                                </div>
+                                <div class="col-sm-4">
+                                    <span>@Html.ValidationMessageFor(model=>model.UserName)</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model=>model.Password,new {@class="col-sm-2"})
+                                <div class="col-sm-6">
+                                    @Html.PasswordFor(model=>model.Password,new {@class="form-control e1",placeholder="لطفا گذرواژه خود را وارد نمایید",ng_model="login.Password"})
+                                </div>
+                                <div class="col-sm-4">
+                                    <span>@Html.ValidationMessageFor(model=>model.Password)</span>
+                                </div>
+                            </div>
+
+                            
+                            <input type="button" ng-click="signIn()" value="ورود" class="btn btn-default"/>
+                        </form>
+                    </div>
+                    <span id="result"></span>
+                </div>
+            </div>
+        </div>
+    }
+</div>

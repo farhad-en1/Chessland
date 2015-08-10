@@ -1,0 +1,5 @@
+C:\Users\Taghizadeh\Documents\Visual Studio 2012\Projects\ChessLandPrj\ChModel\bin\Debug\ChModel.dll
+C:\Users\Taghizadeh\Documents\Visual Studio 2012\Projects\ChessLandPrj\ChModel\bin\Debug\ChModel.pdb
+C:\Users\Taghizadeh\Documents\Visual Studio 2012\Projects\ChessLandPrj\ChModel\obj\Debug\ChModel.csprojResolveAssemblyReference.cache
+C:\Users\Taghizadeh\Documents\Visual Studio 2012\Projects\ChessLandPrj\ChModel\obj\Debug\ChModel.dll
+C:\Users\Taghizadeh\Documents\Visual Studio 2012\Projects\ChessLandPrj\ChModel\obj\Debug\ChModel.pdb
