@@ -34,8 +34,8 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
     
     $routeProvider.when('/download',
 {
-    templateUrl: 'Home/Aboutus',
-    controller: 'AboutusController'
+    templateUrl: 'Home/DownloadIndex',
+    controller: 'DownloadController'
 }); 
     $routeProvider.when('/aboutus',
 {
@@ -51,8 +51,8 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
 
     $routeProvider.when('/onlinechat',
 {
-    templateUrl: 'onlinechat/Index',
-    controller: 'OnlineChatController'
+    templateUrl: 'Home/Aboutus',
+    controller: 'AboutusController'
 }); 
 
 

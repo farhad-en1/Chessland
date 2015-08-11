@@ -95,7 +95,7 @@ namespace ChessLandPrj.Controllers
             if (!ModelState.IsValid) return Json(new { Valid = false, message = "اطلاعات فرستاده شده غلط می باشد" });
 
            var acc= _accountService.LoginAcocunt(infoLogin.UserName, infoLogin.Password);
-           if (acc == null) return Json(new { Valid = false, message = "اطلاعات فرستاده شده غلط می باشد" });
+           if (acc == null) return Json(new { Valid = false, message = "نام کاربری یا رمز ورود اشتباه می باشد" });
            Session.Add("user", acc.AccountId);
            string sex = acc.Gender == 1 ? "اقای" : "خانم ";
            Session.Add("welcome", sex + " " + acc.FirstName + " " + acc.LastName);
